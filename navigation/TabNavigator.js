@@ -2,6 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import HomeScreen from "../screens/Kevin";
+import RaulScreen from "../screens/Raul";
 
 const Tab = createBottomTabNavigator();
 
@@ -43,6 +44,13 @@ export default function TabNavigator() {
             <Tab.Screen name="HomeScreen" component={HomeScreen} options= {{
                 tabBarIcon: ({ color, size }) => (
                     <Ionicons name="home" color={color} size={size} />
+                ),
+            }}
+            />
+
+            <Tab.Screen name="RaulScreen" component={RaulScreen} options= {{
+                tabBarIcon: ({ color, size }) => (
+                    <Ionicons name="raul" color={color} size={size} />
                 ),
             }}
             />
