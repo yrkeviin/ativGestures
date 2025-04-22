@@ -50,7 +50,7 @@ export default function TabNavigator() {
 
             <Tab.Screen name="RaulScreen" component={RaulScreen} options= {{
                 tabBarIcon: ({ color, size }) => (
-                    <Ionicons name="raul" color={color} size={size} />
+                    <Ionicons name="people" color={color} size={size} />
                 ),
             }}
             />

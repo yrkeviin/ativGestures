@@ -7,8 +7,7 @@ export default function KevinScreen() {
 
     return(
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => navigation.navigate("")}>
-                <Text style={styles.buttonText}>Kevin</Text>
+            <TouchableOpacity onPress={() => navigation.navigate("")}><Text style={styles.buttonText}>Kevin</Text>
             </TouchableOpacity>
         </View>
     );
@@ -26,5 +25,6 @@ const styles = StyleSheet.create({
         color: "black",
         padding: 10,
         borderRadius: 5,
+        textAlign: "center",
     },
 })
